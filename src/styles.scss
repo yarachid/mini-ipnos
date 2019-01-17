@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(~@angular/material/prebuilt-themes/indigo-pink);
+
+body, html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: #dafaff;
+}
+
+.btn-img{
+  height: 50px;
+  width: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}

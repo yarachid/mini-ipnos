@@ -135,5 +135,8 @@
       }
     }
   },
-  "defaultProject": "mini-ipnos"
+  "defaultProject": "mini-ipnos",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }

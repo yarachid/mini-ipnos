@@ -1,0 +1,26 @@
+<div class="bg" fxLayout="row wrap" fxLayoutAlign="center center" *ngIf="(soundsToPlay$ | async) as toPlay">
+
+    <div  *ngFor="let sound of getSoundsNames()">
+
+      <div class="btn-img"
+           [ngClass.lt-md]="['small-btn']"
+           *ngIf="!toPlay.includes(sound)"
+           (click)="addSound(sound)"
+           [ngStyle]="{ 'background-image': 'url(/assets/img/sound_'+sound+'_normal.png)'}" >
+      </div>
+
+      <div class="btn-img"
+           [ngClass]="play ? ['play-animation'] : []"
+           [ngClass.lt-md]="['small-btn']"
+           *ngIf="toPlay.includes(sound)"
+           (click)="removeSound(sound)"
+           [ngStyle]="{ 'background-image': 'url(/assets/img/sound_'+sound+'_selected.png)'}">
+
+      </div>
+
+      <app-background-audio [src]="'/assets/sounds/'+sound+'.mp3'" [paused]="!play || !toPlay.includes(sound) "></app-background-audio>
+
+  </div>
+
+
+</div>

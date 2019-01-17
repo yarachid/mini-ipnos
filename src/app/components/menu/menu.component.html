@@ -1,0 +1,12 @@
+<div class="bg-menu" fxLayout="row nowrap" fxLayoutAlign="space-around end">
+
+  <div class="btn-img button_play_icon" (click)="play()" *ngIf="!(playing$ | async)">
+  </div>
+
+  <div class="btn-img button_pause" (click)="pause()" *ngIf="(playing$ | async)">
+  </div>
+
+  <div class="btn-img button_clear" (click)="clear()">
+  </div>
+
+</div>

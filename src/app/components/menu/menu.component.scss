@@ -1,0 +1,25 @@
+.bg-menu{
+  /* The image used */
+  background-image: url("/assets/img/bg_bottom_menu.png");
+  padding: 10px;
+
+  /* Full height */
+  min-height: 25%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.button_clear{
+  background-image: url("/assets/img/button_clear.png");
+}
+
+.button_pause{
+  background-image: url("/assets/img/button_pause.png");
+}
+
+.button_play_icon{
+  background-image: url("/assets/img/button_play_icon.png");
+}
