@@ -6,7 +6,7 @@
            [ngClass.lt-md]="['small-btn']"
            *ngIf="!toPlay.includes(sound)"
            (click)="addSound(sound)"
-           [ngStyle]="{ 'background-image': 'url(/assets/img/sound_'+sound+'_normal.png)'}" >
+           [ngStyle]="{ 'background-image': 'url(\'/assets/img/sound_'+sound+'_normal.png\')'}" >
       </div>
 
       <div class="btn-img"
@@ -14,7 +14,7 @@
            [ngClass.lt-md]="['small-btn']"
            *ngIf="toPlay.includes(sound)"
            (click)="removeSound(sound)"
-           [ngStyle]="{ 'background-image': 'url(/assets/img/sound_'+sound+'_selected.png)'}">
+           [ngStyle]="{ 'background-image': 'url(\'/assets/img/sound_'+sound+'_selected.png\')'}">
 
       </div>
 
